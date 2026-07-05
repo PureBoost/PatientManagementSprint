@@ -40,11 +40,16 @@ public class WaitingQueue {
             return;
         }
 
+
         System.out.println("Current queue.");
 
         for (Patient patient : queue) {
             System.out.println(patient);
         }
+    }
+
+    public int size() {
+        return queue.size();
     }
 
     public Patient getPatient(int index) {
